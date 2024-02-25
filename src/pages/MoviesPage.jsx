@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useSearchParams, useLocation } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import ErrorMessage from "../components/ErrorMessage";
 import MoviesPageList from "../components/MoviesPageList/MoviesPageList";
@@ -47,7 +47,7 @@ export default function MoviesPage() {
       <SearchBar onSearch={handleSearch} />
       {error && <ErrorMessage />}
       {searchMoviesByQuery.length > 0 && (
-        <MoviesPageList movies={searched} state={{ from: location }} />
+        <MoviesPageList movies={searched} state={location} />
       )}
     </div>
   );

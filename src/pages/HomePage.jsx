@@ -37,7 +37,7 @@ export default function HomePage() {
       <h1>Trending today</h1>
       {error && <ErrorMessage />}
       {trendings.length > 0 && (
-        <HomePageList movies={trendings} state={{ from: location }} />
+        <HomePageList movies={trendings} state={location} />
       )}
     </div>
   );

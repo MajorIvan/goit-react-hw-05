@@ -1,0 +1,7 @@
+.backLink {
+  display: flex;
+  color: #252525;
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+}

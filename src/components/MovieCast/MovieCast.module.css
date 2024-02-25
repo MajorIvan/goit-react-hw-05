@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 180px;
+  text-align: center;
+  border: 1px solid;
+  height: 225px;
+}
+.image {
+  height: 150px;
+  width: 100px;
+}

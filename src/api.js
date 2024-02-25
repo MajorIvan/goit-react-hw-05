@@ -7,15 +7,6 @@ axios.defaults.headers.accept = "application/json";
 axios.defaults.headers.Authorization =
   "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjVhYTcwZjVmMWQxZGEzNDYyZjA2ZWUxZDBmZjg5NSIsInN1YiI6IjY1ZGExYmFiNzJkODU1MDE4NWJjYjlmNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Uc-Rtyx8hzOixxeJWHafB0t99MqBw2-LN6ZtOmWOw2s";
 
-// const API_TOKEN =
-//   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NjVhYTcwZjVmMWQxZGEzNDYyZjA2ZWUxZDBmZjg5NSIsInN1YiI6IjY1ZGExYmFiNzJkODU1MDE4NWJjYjlmNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Uc-Rtyx8hzOixxeJWHafB0t99MqBw2-LN6ZtOmWOw2s";
-
-// const options = {
-//   headers: {
-//     Authorization: `Bearer ${API_TOKEN}`,
-//   },
-// };
-
 export const getTrendingMovies = async ({ abortController }) => {
   const response = await axios.get(`/trending/movie/day`, {
     signal: abortController.signal,

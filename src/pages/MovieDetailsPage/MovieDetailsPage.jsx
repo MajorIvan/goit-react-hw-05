@@ -1,10 +1,10 @@
 import { useParams, useLocation, Outlet, Link } from "react-router-dom";
 import { useState, useEffect, useRef, Suspense } from "react";
-import { getMovieByID } from "../api";
-import ErrorMessage from "../components/ErrorMessage";
+import { getMovieByID } from "../../api";
+import ErrorMessage from "../../components/ErrorMessage";
 import css from "./MovieDetailsPage.module.css";
-import BackLink from "../components/BackLink/BackLink";
-import MovieDetails from "../components/MovieDetails/MovieDetails";
+import BackLink from "../../components/BackLink/BackLink";
+import MovieDetails from "../../components/MovieDetails/MovieDetails";
 
 export default function MovieDetailsPage() {
   const [movie, setMovie] = useState(null);

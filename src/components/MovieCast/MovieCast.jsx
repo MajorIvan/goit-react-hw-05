@@ -32,9 +32,8 @@ export default function MovieCast() {
               <img
                 className={css.image}
                 src={`https://image.tmdb.org/t/p/w500/${profile_path}`}
-                alt={name}
               />
-              <p>{name}</p>
+              <h4>{name}</h4>
               <p>Character: {character}</p>
             </li>
           ))}{" "}

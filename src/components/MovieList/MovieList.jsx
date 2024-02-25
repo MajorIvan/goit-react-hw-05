@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import css from "./HomePageList.module.css";
+import css from "./MovieList.module.css";
 
-export default function HomePageList({ movies, state }) {
+export default function MoviesList({ movies, state }) {
   return (
     <ul className={css.list}>
       {movies.map((movie) => (

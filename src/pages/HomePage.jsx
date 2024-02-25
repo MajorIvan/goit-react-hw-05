@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { getTrendingMovies } from "../api";
 import ErrorMessage from "../components/ErrorMessage";
-import HomePageList from "../components/HomePageList/HomePageList";
+import MovieList from "../components/MovieList/MovieList";
 
 export default function HomePage() {
   const [trendings, setTrendings] = useState([]);
@@ -37,7 +37,7 @@ export default function HomePage() {
       <h1>Trending today</h1>
       {error && <ErrorMessage />}
       {trendings.length > 0 && (
-        <HomePageList movies={trendings} state={location} />
+        <MovieList movies={trendings} state={location} />
       )}
     </div>
   );

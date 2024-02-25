@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
 import ErrorMessage from "../components/ErrorMessage";
-import MoviesPageList from "../components/MoviesPageList/MoviesPageList";
+import MovieList from "../components/MovieList/MovieList";
 import { getMovieByQuery } from "../api";
 
 export default function MoviesPage() {
@@ -47,7 +47,7 @@ export default function MoviesPage() {
       <SearchBar onSearch={handleSearch} />
       {error && <ErrorMessage />}
       {searchMoviesByQuery.length > 0 && (
-        <MoviesPageList movies={searched} state={location} />
+        <MovieList movies={searched} state={location} />
       )}
     </div>
   );
